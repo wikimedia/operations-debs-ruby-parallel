@@ -1,0 +1,17 @@
+Source: ruby-parallel
+Section: ruby
+Priority: optional
+Maintainer: Faidon Liambotis <faidon@wikimedia.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
+Standards-Version: 3.9.3
+Homepage: http://github.com/grosser/parallel
+XS-Ruby-Versions: all
+
+Package: ruby-parallel
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+Description: run Ruby code in parallel processes
+ Run any code in parallel Processes(> use all CPUs) or Threads(> speedup
+ blocking operations). Best suited for map-reduce or e.g. parallel
+ downloads/uploads.
